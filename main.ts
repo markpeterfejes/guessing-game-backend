@@ -30,6 +30,8 @@ export class Router
 
             this.app = express();
 
+            this.app.use(this.cors);
+
             this.app.use(bodyParser.json({ limit: "1mb" }));
 
             this.app.get("/guesses", this.getPreviousGuesses);
@@ -46,6 +48,13 @@ export class Router
             console.error(err);
             process.exit(1);
         }
+    }
+
+    private static async cors (req: express.Request, res: express.Response, next: Function)
+    {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
     }
 
     private static async logRequestHandler (req: express.Request, res: express.Response)
