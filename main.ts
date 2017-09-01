@@ -5,7 +5,7 @@ import * as mongoose from "mongoose";
 
 import { LogEntry } from "./src/models";
 
-export class Router
+export class Main
 {
     public static readonly serverPort = 3000;
 
@@ -84,4 +84,4 @@ export class Router
 
 }
 
-Router.startServer();
+Main.startServer();
