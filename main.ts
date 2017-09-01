@@ -59,27 +59,41 @@ export class Main
 
     private static async logRequestHandler (req: express.Request, res: express.Response)
     {
-        const guess = +req.body.guess;
-        const solution = +req.body.solution;
-
-        if (isNaN(guess))
+        try
         {
-            res.status(400).send({ message: "The 'guess' parameter was misformatted" });
-            return;
-        }
+            const guess = +req.body.guess;
+            const solution = +req.body.solution;
 
-        if (isNaN(solution))
+            if (isNaN(guess))
+            {
+                res.status(400).send({ message: "The 'guess' parameter was misformatted" });
+                return;
+            }
+
+            if (isNaN(solution))
+            {
+                res.status(400).send({ message: "The 'solution' parameter was misformatted" });
+                return;
+            }
+
+            res.send(await new LogEntry({ guess, solution }).save());
+        }
+        catch
         {
-            res.status(400).send({ message: "The 'solution' parameter was misformatted" });
-            return;
+            res.status(500).send({ message: "An error occured while processing your request." })
         }
-
-        res.send(await new LogEntry({ guess, solution }).save());
     }
 
     private static async getPreviousGuesses (req: express.Request, res: express.Response)
     {
-        res.send(await LogEntry.find());
+        try
+        {
+            res.send(await LogEntry.find());
+        }
+        catch
+        {
+            res.status(500).send({ message: "An error occured while processing your request." })
+        }
     }
 
 }
