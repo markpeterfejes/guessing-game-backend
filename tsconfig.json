@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "declaration": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "target": "es2017",
+      "alwaysStrict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "removeComments": false
+    }
+  }
+  

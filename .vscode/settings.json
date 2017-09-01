@@ -1,0 +1,27 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib/",
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+    "editor.formatOnType": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true ,
+
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "onFocusChange",
+
+    "extensions.autoUpdate": true,
+
+    "editor.insertSpaces": true ,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+
+    "tslint.autoFixOnSave": true,
+
+    "tsimporter.doubleQuotes": true,
+
+    "typescript.referencesCodeLens.enabled": false
+}

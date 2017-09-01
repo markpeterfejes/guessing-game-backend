@@ -1,0 +1,116 @@
+{
+    "rulesDirectory": [],
+    "rules": {
+        "class-name": true,
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "space-before-function-paren": [
+            true,
+            "always"
+        ],
+        "curly": true,
+        "eofline": true,
+        "forin": true,
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "label-position": true,
+        "max-line-length": [
+            true,
+            140
+        ],
+        "member-access": true,
+        "member-ordering": [
+            true,
+            "static-before-instance",
+            "variables-before-functions"
+        ],
+        "no-arg": true,
+        "no-bitwise": true,
+        "no-console": [
+            true,
+            "debug",
+            "info",
+            "time",
+            "timeEnd",
+            "trace"
+        ],
+        "align": [
+            true,
+            "parameters",
+            "statements"
+        ],
+        "no-construct": true,
+        "no-debugger": true,
+        "no-duplicate-variable": true,
+        "no-empty": false,
+        "no-eval": true,
+        "no-inferrable-types": [
+            true,
+            "ignore-params"
+        ],
+        "no-shadowed-variable": true,
+        "no-string-literal": false,
+        "no-switch-case-fall-through": true,
+        "no-trailing-whitespace": true,
+        "no-unused-expression": true,
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "always",
+                "singleline": "never"
+            }
+        ],
+        "no-use-before-declare": true,
+        "no-var-keyword": true,
+        "object-literal-sort-keys": false,
+        "one-line": [
+            false,
+            "check-open-brace",
+            "check-catch",
+            "check-else",
+            "check-whitespace"
+        ],
+        "quotemark": [
+            true,
+            "double"
+        ],
+        "radix": true,
+        "semicolon": [
+            "always"
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "typedef-whitespace": [
+            false,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type",
+            "check-module"
+        ]
+    }
+}
