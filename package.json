@@ -2,10 +2,10 @@
   "name": "second-test-be",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "./dist/main.js",
   "scripts": {
     "compile": "tsc",
-    "prestart": "npm run compile",
+    "postinstall": "npm run compile",
     "start": "node ./dist/main.js"
   },
   "repository": {
